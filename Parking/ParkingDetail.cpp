@@ -1,11 +1,14 @@
 #include<iostream>
+#pragma once
 using namespace std;
-class ParkingFloor 
+class ParkingDetail 
 {
-public:
-    string FloorNumber;
+private:
     string Row;
     string Col;
+public:
+    string FloorNumber;
+    
     virtual void setFloorNumber(string)=0;
     void setRow(string row){
         this->Row=row;
@@ -17,7 +20,7 @@ public:
     string getRow(){
         return Row;
     }
-    string getcol(){
+    string getCol(){
         return Col;
     }
 

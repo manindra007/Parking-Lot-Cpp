@@ -1,0 +1,61 @@
+vehicle                                                                 
+        type    enum
+        reg     string
+        owner   string(later person)
+
+parking                                                                 <>
+        floor   int
+        row     int
+        spot    int
+        EntryGate   int 
+        exitGate    int 
+
+floor                                                                   <>
+        spot
+        floorNumber
+        
+
+Booking 
+        parking     parking
+        vehicle     vehicle
+        person      person
+        ticket      ticket
+        payment     payment
+
+ticket 
+        entryTime   time
+        vehicleReg  vehicle.registration
+        barcode     int     471806102021224115
+        rate        vehicle.type*int/hr
+        spot        parking.ID
+
+Person customer
+        name        string
+        address     string
+        mob         string
+        age         int
+
+person admin
+        name        string
+        address     string
+        mob         string
+        age         int         
+        empid       string      Mani01
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Entry
+exit
+parkingfloor
+Parkinglot

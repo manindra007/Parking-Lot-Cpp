@@ -1,11 +1,12 @@
 #include<iostream>
+#pragma once
 #include<string.h>
 #include"ParkingType.cpp"
-#include"ParkingFloor.cpp"
+#include"ParkingDetail.cpp"
 // #include"../Vehicle/Vehicle.cpp"
 using namespace std;
 
-class ParkingSpot:ParkingFloor{
+class ParkingSpot:public ParkingDetail{
     string ParkingId;
     ParkingType parkingType;
     bool isEmpty;
