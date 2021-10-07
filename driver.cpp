@@ -1,7 +1,7 @@
 #include<iostream>
 #include<conio.h>
-#include"Vehicle/VehicleByke.cpp"
-// #include"../Parking/ParkingCar.cpp"
+#include"vehicle/VehicleByke.cpp"
+#include"Parking/ParkingByke.cpp"
 #include"Parking/ParkingCar.cpp"
 
 
@@ -14,6 +14,10 @@ int main(){
     cout<<pc.getFloorNumber()<<endl;
     cout<<pc.getRow()<<endl;////error is here
     cout<<pc.getCol()<<endl;
+    ParkingByke pb("1A2");
+    cout<<pb.getFloorNumber()<<endl;
+    cout<<pb.getRow()<<endl;////error is here
+    cout<<pb.getCol()<<endl;
     // cout<<v1.getLicencePlateNum()<<endl;
     // ParkingByke pb;
     // cout<<pb.getParkingType()<<endl;

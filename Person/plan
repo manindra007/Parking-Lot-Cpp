@@ -1,16 +1,19 @@
-vehicle
+vehicle                                                                 
+
         type    enum
         reg     string
         owner   string(later person)
 
-parking
+parking                                                                 <>
+
         floor   int
         row     int
         spot    int
         EntryGate   int 
         exitGate    int 
 
-floor   
+floor                                                                   <>
+
         spot
         floorNumber
         
