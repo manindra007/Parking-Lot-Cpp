@@ -16,10 +16,10 @@ public:
         setPincode("");
         setMobileNumber("");
     }
-    CustomerDetail(string name="", int age=0, string address="", string pincode="", string mobile="", PersonType person=Customer){
+    CustomerDetail(string name="", int age=0, string address="", string pincode="", string mobile=""){
         setName(name);
         setAge(age);
-        setPersonType(person);
+        setPersonType(Customer);
         setAddress(address);
         setPincode(pincode);
         setMobileNumber(mobile);
