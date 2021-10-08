@@ -38,7 +38,7 @@ Person customer                                                 <>
         mob         string
         age         int
 
-person employee/admin                                                    <>
+person admin                                                    <>
         name        string
         address     string
         mob         string
