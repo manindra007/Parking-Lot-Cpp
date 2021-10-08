@@ -9,10 +9,10 @@ private:
     string employeeId;
     bool adminStatus=false;
 public:
-    EmployeeDetail(string name, int age, string address, string pincode, string mobile, PersonType person=Employee){
+    EmployeeDetail(string name, int age, string address, string pincode, string mobile){
         setName(name);
         setAge(age);
-        setPersonType(person);
+        setPersonType(Employee);
         setAddress(address);
         setPincode(pincode);
         setMobileNumber(mobile);
