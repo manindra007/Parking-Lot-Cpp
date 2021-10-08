@@ -3,6 +3,6 @@
 
 class VehicleByke :public Vehicle{
     public:
-    VehicleByke(string licencePlateNumber,PersonDetail name=(*new PersonDetail())):Vehicle(Bus,licencePlateNumber,name){
+    VehicleByke(string licencePlateNumber,string name=""):Vehicle(Bus,licencePlateNumber,name){
     }
 };
