@@ -1,11 +1,12 @@
 #include<iostream>
 #pragma once
 #include"VehicleType.cpp"
+#include"../Person/PersonDetail.cpp"
 using namespace std;
 
 class Vehicle{
     string registrationNumber;
-    string ownerName="";
+    PersonDetail ownerName;
     VehicleType vehicleType;
 public:
     Vehicle(VehicleType vehicleType,string licencePlate,PersonDetail name){
@@ -34,5 +35,4 @@ public:
         return ownerName;
     }
     
-
 };

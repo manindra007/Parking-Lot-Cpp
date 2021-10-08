@@ -2,7 +2,7 @@
 #include"vehicle.cpp"
 
 class VehicleEcar :public Vehicle{
-    public:
-    VehicleEcar(string licencePlateNumber,string name=""):Vehicle(Ecar,licencePlateNumber,name){
+public:
+    VehicleEcar(string licencePlateNumber,PersonDetail name=(*new PersonDetail())):Vehicle(Ecar,licencePlateNumber,name){
     }
 };
