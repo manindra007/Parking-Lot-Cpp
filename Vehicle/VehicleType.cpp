@@ -1,6 +1,6 @@
 #pragma once
 enum VehicleType{
-    Byke,
+    Byke=1,
     Car,
     Ebyke,
     Ecar,
