@@ -1,4 +1,4 @@
-vehicle                                                                 
+vehicle                                                     <>            
 
         type    enum
         reg     string
@@ -32,13 +32,13 @@ ticket
         rate        vehicle.type*int/hr
         spot        parking.ID
 
-Person customer
+Person customer                                                 <>
         name        string
         address     string
         mob         string
         age         int
 
-person admin
+person admin                                                    <>
         name        string
         address     string
         mob         string
