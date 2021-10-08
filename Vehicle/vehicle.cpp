@@ -1,4 +1,5 @@
 #include<iostream>
+#pragma once
 #include"VehicleType.cpp"
 using namespace std;
 
