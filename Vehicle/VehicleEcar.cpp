@@ -3,6 +3,6 @@
 
 class VehicleEcar :public Vehicle{
     public:
-    VehicleEcar(string licencePlateNumber,string name=""):Vehicle(Ecar,licencePlateNumber,name){
+    VehicleEcar(string licencePlateNumber,PersonDetail name=(*new PersonDetail())):Vehicle(Ecar,licencePlateNumber,name){
     }
 };
