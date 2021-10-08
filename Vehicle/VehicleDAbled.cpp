@@ -2,7 +2,7 @@
 #include"vehicle.cpp"
 
 class VehicleDAbled :public Vehicle{
-    public:
+public:
     VehicleDAbled(string licencePlateNumber,PersonDetail name=(*new PersonDetail())):Vehicle(DAbled,licencePlateNumber,name){
     }
 };

@@ -27,6 +27,7 @@ int main(){
     VehicleCar vc("up53cr7651",cd1);
     cout<<vc.getVehicleType()<<endl;
     cout<<vc.getOnwerName().getName()<<endl;
+    
     // cout<<v1.getLicencePlateNum()<<endl;
     // ParkingByke pb;
     // cout<<pb.getParkingType()<<endl;
