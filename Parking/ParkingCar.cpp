@@ -4,6 +4,6 @@ using namespace std;
 
 class ParkingCar :public ParkingSpot{
     public:
-    ParkingCar(string pid):ParkingSpot(pCar,20,pid){
+    ParkingCar(string pid):ParkingSpot(pCar,pid){
     }
 };

@@ -3,7 +3,7 @@
 
 class ParkingEcar :public ParkingSpot{
     public:
-    ParkingEcar(string pid):ParkingSpot(pEcar,30,pid){
+    ParkingEcar(string pid):ParkingSpot(pEcar,pid){
     }
 
 };

@@ -3,7 +3,7 @@
 
 class ParkingEbyke :public ParkingSpot{
     public:
-    ParkingEbyke(string pid):ParkingSpot(pEbyke,15,pid){
+    ParkingEbyke(string pid):ParkingSpot(pEbyke,pid){
     }
 
 };
