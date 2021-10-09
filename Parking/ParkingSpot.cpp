@@ -10,14 +10,12 @@ class ParkingSpot:public ParkingDetail{
     string ParkingId;
     ParkingType parkingType;
     bool isEmpty;
-    int fare;
 
     public:
-    ParkingSpot(ParkingType parkingType,int fare,string pid){
+    ParkingSpot(ParkingType parkingType,string pid){
         setParkingId(pid);
         setParkingStatus(true);
         setParkingType(parkingType);
-        setFare(fare);
     }
     //setter
     void setParkingId(string pid){
@@ -35,15 +33,9 @@ class ParkingSpot:public ParkingDetail{
     void setParkingStatus(bool b){
         this->isEmpty=b;
     }
-    void setFare(int fare){
-        this->fare=fare;
-    }
     //getter
     string getFloorNumber(){
         return FloorNumber;
-    }
-    int getFare(){
-        return fare;
     }
     string getParkingId(){
         return ParkingId;

@@ -3,7 +3,7 @@
 
 class ParkingDAbled :public ParkingSpot{
     public:
-    ParkingDAbled(string pid):ParkingSpot(pDAbled,5,pid){
+    ParkingDAbled(string pid):ParkingSpot(pDAbled,pid){
     }
 
 };

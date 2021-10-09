@@ -6,13 +6,13 @@ using namespace std;
 
 class Vehicle{
     string registrationNumber;
-    PersonDetail ownerName;
+    PersonDetail owner;
     VehicleType vehicleType;
 public:
     Vehicle(VehicleType vehicleType,string licencePlate,PersonDetail name){
         setVehicleType(vehicleType);
         setRegistrationNumber(licencePlate);
-        setOwnerName(name);
+        setOwner(name);
     }
     // setters
     void setVehicleType(VehicleType vehicleType){
@@ -21,8 +21,8 @@ public:
     void setRegistrationNumber(string regNumber){
         this->registrationNumber=regNumber;
     }
-    void setOwnerName(PersonDetail name){
-        this->ownerName=name;
+    void setOwner(PersonDetail name){
+        this->owner=name;
     }
     //getters
     VehicleType getVehicleType(){
@@ -31,8 +31,8 @@ public:
     string getLicencePlateNum(){
         return registrationNumber;
     }
-    PersonDetail getOnwerName(){
-        return ownerName;
+    PersonDetail getOnwer(){
+        return owner;
     }
     
 };

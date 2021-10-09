@@ -6,6 +6,7 @@
 #include"Parking/ParkingCar.cpp"
 #include"Person/CustomerDetail.cpp"
 #include"Person/EmployeeDetail.cpp"
+#include"Ticket/TicketDetail.cpp"
 
 using namespace std;
 
@@ -26,8 +27,11 @@ int main(){
     cout<<cd1.getName()<<endl;
     VehicleCar vc("up53cr7651",cd1);
     cout<<vc.getVehicleType()<<endl;
-    cout<<vc.getOnwerName().getName()<<endl;
-    
+    cout<<vc.getOnwer().getName()<<endl;
+    TicketDetail td1;
+    cout<<td1.generateTicket(vc,pc)<<endl;
+    getch();
+    cout<<td1.deleteTicket()<<endl;
     // cout<<v1.getLicencePlateNum()<<endl;
     // ParkingByke pb;
     // cout<<pb.getParkingType()<<endl;
