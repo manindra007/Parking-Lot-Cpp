@@ -66,7 +66,7 @@ int main(){
     // VehicleByke v1("UP53BM8651");
     // ParkingCar pc("1A1");
     // ParkingByke pb("1A2");
-    EmployeeDetail ed1("manindra",26,"a","b","c");
+    EmployeeDetail ed1("manindra",26,"Address","pincode","mob");
     CustomerDetail cd1("singh");
     VehicleEbyke vc("up53cr7651",cd1);
     VehicleEbyke vc1("up53cr7651",cd1);
