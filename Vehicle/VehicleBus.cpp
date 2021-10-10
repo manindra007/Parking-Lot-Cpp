@@ -1,8 +1,8 @@
 #include<iostream>
 #include"vehicle.cpp"
 
-class VehicleByke :public Vehicle{
+class VehicleBus :public Vehicle{
 public:
-    VehicleByke(string licencePlateNumber,PersonDetail name=(*new PersonDetail())):Vehicle(Bus,licencePlateNumber,name){
+    VehicleBus(string licencePlateNumber,PersonDetail name=(*new PersonDetail())):Vehicle(Bus,licencePlateNumber,name){
     }
 };

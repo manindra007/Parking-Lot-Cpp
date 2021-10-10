@@ -12,6 +12,7 @@ class ParkingSpot:public ParkingDetail{
     bool isEmpty;
 
     public:
+    ParkingSpot(){}
     ParkingSpot(ParkingType parkingType,string pid){
         setParkingId(pid);
         setParkingStatus(true);
