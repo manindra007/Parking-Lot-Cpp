@@ -1,24 +1,34 @@
 #include<iostream>
 #include<string>
 #include<time.h>
+#pragma once
 #include"../Vehicle/vehicle.cpp"
 #include"../Parking/ParkingSpot.cpp"
 
 using namespace std;
+
 class TicketDetail
 {
     time_t entryTime=time(0);
     char* s;
+    Vehicle vehicle;
     string vehicleReg;
     VehicleType vehicleType;
-    string rate;
+    int rate;
     string spotId;
     string name;
     string ticketData;
     // how to generate ticket ID can we use static int?
 public:
-    string generateTicket(Vehicle veh,ParkingSpot pc){
 
+    string generateTicket(){
+        return ticketData;
+    }
+    string getTicketId(){
+        return spotId;
+    }
+    TicketDetail(Vehicle veh,ParkingSpot pc):vehicle(veh){
+        // this->vehicle=veh;
         this->vehicleReg=veh.getLicencePlateNum();
         this->vehicleType =veh.getVehicleType();
         setRate(veh);
@@ -26,14 +36,15 @@ public:
         this->name=veh.getOnwer().getName();
         pc.setParkingStatus(false);
         s=ctime(&entryTime);
-        cout<<"aaaaaaaaa   "<<s<<endl;
         ticketData= vehicleReg+" "+to_string(this->vehicleType)+" "+veh.getOnwer().getName()+" "+pc.getParkingId()+" "+s;
-        return ticketData;
+        
     }
-    int deleteTicket(){
-        time_t currentTime=time(0);
-        time(&currentTime);
-        return currentTime-entryTime;
+    int deleteTicket(ParkingSpot pc){
+        // time_t currentTime=time(0);
+        // time(&currentTime);
+        // return currentTime-entryTime;
+        pc.setParkingStatus(true);
+        return rate;
     }
     void setRate(Vehicle veh){
         switch (veh.getVehicleType()){

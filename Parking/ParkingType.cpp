@@ -1,6 +1,6 @@
 #pragma once
 enum ParkingType{
-    pByke,
+    pByke=1,
     pCar,
     pEbyke,
     pEcar,
